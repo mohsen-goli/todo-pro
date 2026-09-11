@@ -230,3 +230,106 @@ body.dark #todo-list li {
 body.dark #todo-list li:hover {
   background: #475569;
 }
+/* Todo Table */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+}
+
+.table-container th,
+.table-container td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table-container th {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 14px;
+}
+
+.table-container td {
+  color: #334155;
+}
+
+.table-container tbody tr {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.table-container tbody tr:hover {
+  background: #eef2ff;
+}
+
+.table-container td:last-child {
+  white-space: nowrap;
+}
+
+.table-container td button {
+  border: none;
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.table-container td button:first-child {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.table-container td button:last-child {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.table-container td button:hover {
+  transform: translateY(-1px);
+}
+
+/* Dark mode */
+
+body.dark .table-container th {
+  background: #334155;
+  color: #e2e8f0;
+}
+
+body.dark .table-container td {
+  color: #f1f5f9;
+  border-color: #475569;
+}
+
+body.dark .table-container tbody tr:hover {
+  background: #475569;
+}
+
+body.dark .table-container td button:first-child {
+  background: #4338ca;
+  color: white;
+}
+
+body.dark .table-container td button:last-child {
+  background: #991b1b;
+  color: white;
+}
+
+/* Empty state */
+
+.table-container td[colspan="3"] {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+}
+
+body.dark .table-container td[colspan="3"] {
+  color: #cbd5e1;
+}
